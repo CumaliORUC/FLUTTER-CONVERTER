@@ -56,7 +56,7 @@ class _CurrencyConverterPageState extends State<CurrencyConverterStatefullPage> 
                 margin: const EdgeInsets.all(8.0),
                 color: const Color.fromARGB(112, 220, 159, 215),
                 child: Text(
-                  '${result.toStringAsFixed(2)} TL',
+                  '${result!=0 ? result.toStringAsFixed(2): result.toStringAsFixed(0)} TL',
                   style: const TextStyle(
                     fontSize: 35, //font Size
                       fontWeight: FontWeight.bold, //font Weight
